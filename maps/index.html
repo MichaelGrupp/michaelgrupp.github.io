@@ -10,14 +10,25 @@
     <title>maps</title>
 
     <!-- config for our rust wasm binary. go to https://trunkrs.dev/assets/#rust for more customization -->
-    <link data-trunk rel="rust" data-wasm-opt="2" />
+    
+<script type="module">
+import init, * as bindings from 'https://michaelgrupp.github.io/maps/maps-3097ea367342f6fe.js';
+const wasm = await init({ module_or_path: 'https://michaelgrupp.github.io/maps/maps-3097ea367342f6fe_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
     <!-- this is the base url relative to which other urls will be constructed. trunk will insert this from the public-url option -->
-    <base data-trunk-public-url />
+    <base href="https://michaelgrupp.github.io/maps/" />
 
-    <link data-trunk rel="icon" href="assets/favicon.ico">
+    <link rel="icon" href="https://michaelgrupp.github.io/maps/favicon-badea6babda3a29.ico" integrity="sha384&#x2D;lgxqDZ0ICNiX0j&#x2F;SPrV1BYkYXdfJIwyP2s9GXYCxapBEbGeMkghkgr1bHJMI&#x2F;YgS"/>
 
 
-    <link data-trunk rel="copy-file" href="assets/sw.js"/>
+    
     
     <!--
     <link data-trunk rel="copy-file" href="assets/manifest.json"/>
@@ -88,7 +99,7 @@
             text-align: center;
         }
     </style>
-</head>
+<link rel="modulepreload" href="https://michaelgrupp.github.io/maps/maps-3097ea367342f6fe.js" crossorigin="anonymous" integrity="sha384-CVQAVqjDjQdvmz359MFPvEUCaKIUrlYCihwfDmpWB7BzNneNLYWz/geH+WfNigvv"><link rel="preload" href="https://michaelgrupp.github.io/maps/maps-3097ea367342f6fe_bg.wasm" crossorigin="anonymous" integrity="sha384-qxqIeJQjTq0mzIda40pVxzIdgqR2jNYuNheKoloGMKLqikYN4CMWRwMF+lR39SNU" as="fetch" type="application/wasm"></head>
 
 <body>
     <!-- The WASM code will resize the canvas dynamically -->
