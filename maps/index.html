@@ -11,8 +11,8 @@
     <!-- config for our rust wasm binary. go to https://trunkrs.dev/assets/#rust for more customization -->
     
 <script type="module">
-import init, * as bindings from 'https://michaelgrupp.github.io/maps/maps-2457fc13160b1b2b.js';
-const wasm = await init({ module_or_path: 'https://michaelgrupp.github.io/maps/maps-2457fc13160b1b2b_bg.wasm' });
+import init, * as bindings from 'https://michaelgrupp.github.io/maps/maps-46c282dd61e1d7a.js';
+const wasm = await init({ module_or_path: 'https://michaelgrupp.github.io/maps/maps-46c282dd61e1d7a_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -87,7 +87,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
             text-align: center;
         }
     </style>
-<link rel="modulepreload" href="https://michaelgrupp.github.io/maps/maps-2457fc13160b1b2b.js" crossorigin="anonymous" integrity="sha384-PbJg8xbmYNlB6Tv3yrJ04jPLG2BiWmn/3Tj1va9hypoQYd2WBYEE1kpEoJw9Jec4"><link rel="preload" href="https://michaelgrupp.github.io/maps/maps-2457fc13160b1b2b_bg.wasm" crossorigin="anonymous" integrity="sha384-XJ/zYP8C7xBDTyldwUHKUpDhUpCCKi0NiO1CkuRn5c1RROSwwCY34krjhSCsUWiY" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="https://michaelgrupp.github.io/maps/maps-46c282dd61e1d7a.js" crossorigin="anonymous" integrity="sha384-UQ037QQmXUjjWGkC5o4zPFlZxeBFfuOlmskiplhxC6xShzllGXAkpOsOaRdEuwoE"><link rel="preload" href="https://michaelgrupp.github.io/maps/maps-46c282dd61e1d7a_bg.wasm" crossorigin="anonymous" integrity="sha384-e21Q36wH9SxfIGVpXtlwp7V9Q7yrHJG7Om/dbH2VVVR2c+L9+0aAIp1KNAdFDyLq" as="fetch" type="application/wasm"></head>
 
 <body>
     <!-- The WASM code will resize the canvas dynamically -->
