@@ -11,8 +11,8 @@
     <!-- config for our rust wasm binary. go to https://trunkrs.dev/assets/#rust for more customization -->
     
 <script type="module">
-import init, * as bindings from 'https://michaelgrupp.github.io/maps/maps-86d81a09d11a87a3.js';
-const wasm = await init({ module_or_path: 'https://michaelgrupp.github.io/maps/maps-86d81a09d11a87a3_bg.wasm' });
+import init, * as bindings from 'https://michaelgrupp.github.io/maps/maps-834c02a83226353.js';
+const wasm = await init({ module_or_path: 'https://michaelgrupp.github.io/maps/maps-834c02a83226353_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -24,7 +24,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
     <!-- this is the base url relative to which other urls will be constructed. trunk will insert this from the public-url option -->
     <base href="https://michaelgrupp.github.io/maps/" />
 
-    <link rel="icon" href="https://michaelgrupp.github.io/maps/favicon-badea6babda3a29.ico" integrity="sha384&#x2D;lgxqDZ0ICNiX0j&#x2F;SPrV1BYkYXdfJIwyP2s9GXYCxapBEbGeMkghkgr1bHJMI&#x2F;YgS"/>
+    <link rel="icon" href="https://michaelgrupp.github.io/maps/favicon-badea6babda3a29.ico" integrity="sha384-lgxqDZ0ICNiX0j/SPrV1BYkYXdfJIwyP2s9GXYCxapBEbGeMkghkgr1bHJMI/YgS"/>
 
     
 
@@ -87,7 +87,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
             text-align: center;
         }
     </style>
-<link rel="modulepreload" href="https://michaelgrupp.github.io/maps/maps-86d81a09d11a87a3.js" crossorigin="anonymous" integrity="sha384-6ovgEQpvXpwtzGlE3bR2H8krjss2P7Z0D65m/6jIqhW+2ZCA5K3M67tgNy7vFgE8"><link rel="preload" href="https://michaelgrupp.github.io/maps/maps-86d81a09d11a87a3_bg.wasm" crossorigin="anonymous" integrity="sha384-6uAP1USAh5oW0yNtpLJID34MI+u3X1vqCoX5cODDw4Q5l7qSoK5WTZwzUgpUZ8+P" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="https://michaelgrupp.github.io/maps/maps-834c02a83226353.js" crossorigin="anonymous" integrity="sha384-wlXupOc1HHp3k5FK35I/0NTAl40NTNyGjESz+gtJBmEe1d2EDBLBGbSdjNa86btY"><link rel="preload" href="https://michaelgrupp.github.io/maps/maps-834c02a83226353_bg.wasm" crossorigin="anonymous" integrity="sha384-6I4kcNRQCISqdKwrSCq7CEHZJqJmDdV84N4VKH528oYF+P/M0/eFK/TyHtr1krrj" as="fetch" type="application/wasm"></head>
 
 <body>
     <!-- The WASM code will resize the canvas dynamically -->
