@@ -11,8 +11,8 @@
     <!-- config for our rust wasm binary. go to https://trunkrs.dev/assets/#rust for more customization -->
     
 <script type="module">
-import init, * as bindings from 'https://michaelgrupp.github.io/maps/maps-ee04ba135a5f596f.js';
-const wasm = await init({ module_or_path: 'https://michaelgrupp.github.io/maps/maps-ee04ba135a5f596f_bg.wasm' });
+import init, * as bindings from '/maps-df0fa1d5f1e0af78.js';
+const wasm = await init({ module_or_path: '/maps-df0fa1d5f1e0af78_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -22,9 +22,9 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
     <!-- this is the base url relative to which other urls will be constructed. trunk will insert this from the public-url option -->
-    <base href="https://michaelgrupp.github.io/maps/" />
+    <base href="/" />
 
-    <link rel="icon" href="https://michaelgrupp.github.io/maps/favicon-badea6babda3a29.ico" integrity="sha384&#x2D;lgxqDZ0ICNiX0j&#x2F;SPrV1BYkYXdfJIwyP2s9GXYCxapBEbGeMkghkgr1bHJMI&#x2F;YgS"/>
+    <link rel="icon" href="/favicon-badea6babda3a29.ico" integrity="sha384-lgxqDZ0ICNiX0j/SPrV1BYkYXdfJIwyP2s9GXYCxapBEbGeMkghkgr1bHJMI/YgS"/>
 
     
 
@@ -87,7 +87,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
             text-align: center;
         }
     </style>
-<link rel="modulepreload" href="https://michaelgrupp.github.io/maps/maps-ee04ba135a5f596f.js" crossorigin="anonymous" integrity="sha384-P62bJwxNfNhtmgkU5FgCQE7FXyX5edZUh8vBzpsVE49arKC2xitE9jY7UKKZnqWk"><link rel="preload" href="https://michaelgrupp.github.io/maps/maps-ee04ba135a5f596f_bg.wasm" crossorigin="anonymous" integrity="sha384-WlUsJAunmrP9Jti3PSGwFhfuNcE5ddHECbdYRYLITL6kt8YtrCIk6eDh69jAHUwU" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/maps-df0fa1d5f1e0af78.js" crossorigin="anonymous" integrity="sha384-iy7MjrH5uZy/u/IgJTyqRJhOW1If9QdtvTolnIy9tV2bwH97Pk/mervAr4LFW1fH"><link rel="preload" href="/maps-df0fa1d5f1e0af78_bg.wasm" crossorigin="anonymous" integrity="sha384-dQyKRru8JOP0NSPscYk46AYGmRd2Io2+EgJG5VDbnA0eFhRYMT7e7dl14fG8yso0" as="fetch" type="application/wasm"></head>
 
 <body>
     <!-- The WASM code will resize the canvas dynamically -->
